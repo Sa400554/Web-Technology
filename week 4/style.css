@@ -1,0 +1,9 @@
+#sangten{
+    border-radius: 50%;
+    width: auto;
+    height: 500px;
+    background-size: cover;
+}
+body{
+    background-color: skyblue;
+}
