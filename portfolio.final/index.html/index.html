@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Sangten Lama Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div id="header">
+ <div class="container">
+    <nav>
+        <img src="images/haha.png" class="logo">
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="header-text"></div>
+    <p>Composer/Rapper</p>
+    <h1>Hi, I'm <span>Sangten</span>Lama <br>Aka Roshi from Boudha</h1>
+ </div>
+ </div> 
+
+<!-----about---->
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/roshi.png.jpg">
+            </div>
+            <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>Student by day, Rapper by night. I do ethnical and indigenous experiment.<br>
+              Promoting my language, preserving my anscetors method by contributing my <br>
+              skiils and time on ethnical album. By 2024, will be dropping ROSHI SHYONG</p>
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Rapper?Composer</span><br>Motivator/lyrics Writer</li>
+                    <li><span>Writing muics</span><br>Trap rap/Melody rap</li>
+                    <li><span>Motivating youghts</span><br>Inspiring through art/Helping the needy</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>Dental Technician</span><br>Universal dental Hospital</li>
+                    <li><span>Helper Accountant</span><br>Chyorten Chokling Tamang Gumba</li>
+                    <li><span>Lord-Buddha</span><br>Jilla Bikas Samiti</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2022</span><br>Herald College/University of Wolverhampton</li>
+                    <li><span>2015</span><br>Xavier International College</li>
+                    <li><span>2017</span><br>IELTS</li>
+                </ul>
+              </div>
+        </div>
+    </div>
+ </div> 
+ <!-------Portfolio----->
+
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Hobbies</h1>
+        <div class="hobbies-list">
+            <div class="hobbies">
+                <img src="images/basketball.png.JPG">
+                <div class="layer">
+                <h3>Basketball</h3>
+                <p>Basketball is my passion, I live for the thrill of dribbling, shooting, and scoring on the court.</p>
+             </div>
+            </div>
+            <div class="hobbies">
+                <img src="images/boxing.png.jpg">
+                <div class="layer">
+                <h3>Boxing</h3>
+                <p>Boxing is my forte, I excel in the ring with my lightning-fast punches and strategic defense..</p>
+            </div>
+            </div>
+            </div>
+            <br>
+            <div class="hobbies">
+                <img src="images/swimming.png.jpg">
+                <div class="layer">
+                <h3>Swimming</h3>
+                <p>Swimming is my expertise, I glide through the water with ease and precision, leaving others in awe of my skills and endurance.</p>
+            </div>
+            </div>
+            </div>
+        </div>
+        <a href="#" class="sangten">See More</a>
+    </div>
+ </div>
+ <!------contact------->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane-top"></i> Sangtenlama456@yahoo.com</p>
+            <p><i class="fa-solid fa-mobile"></i> 9818318691</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/sangten.lama.397/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/p/CiXvTbQvLwD/?igshid=NTdlMDg3MTY="><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/sangten-lama-9a348325a/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="images/my-cv.pdf.pdf" download class="sangten sangten2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="sangten sangten2">Submit</button>
+            </form>
+          </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; Sangten 2023 October 4</p>
+    </div>
+ </div>
+
+
+
+ <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontents of tabcontents){
+            tabcontents.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+ </script>
+</body>
+</html>
